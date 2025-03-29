@@ -15,5 +15,24 @@
         "phone" : "Mobiltelefon",
         "art" : "Kunst"
 
-    }
+    },
+
+    "APP_LISTING_CREATE_NEW": "Ny annonse",
+    "APP_LISTING_CREATE_NEW_HEADER_LABEL": "Overskrift",
+    "APP_LISTING_CREATE_NEW_DESCRIPTION_LABEL":"Beskrivelse",
+    "APP_LISTING_CREATE_NEW_CATEGORY_LABEL": "Kategori",
+    "APP_LISTING_CREATE_NEW_PRICE_LABEL": "Pris",
+    "APP_LISTING_CREATE_NEW_POSTAL_CODE_LABEL": "Postnummer",
+    "APP_LISTING_CREATE_NEW_IMAGES_LABEL": "Vedlegg",
+
+    "APP_LISTING_CREATE_NEW_HEADER_PLACEHOLDER": "Skriv inn overskrift",
+    "APP_LISTING_CREATE_NEW_DESCRIPTION_PLACEHOLDER": "Skriv inn beskrivelse",
+    "APP_LISTING_CREATE_NEW_CATEGORY_PLACEHOLDER": "Velg kategori",
+    "APP_LISTING_CREATE_NEW_PRICE_PLACEHOLDER": "Skriv inn pris",
+    "APP_LISTING_CREATE_NEW_POSTAL_CODE_PLACEHOLDER": "Skriv inn postnummer",
+    "APP_LISTING_CREATE_NEW_IMAGES_PLACEHOLDER": "Legg ved bilder",
+
+    "APP_LISTING_CREATE_NEW_SUBMIT_BUTTON": "Opprett annonse",
+    "APP_LISTING_UPLOAD_FILE": "legg til fil",
+    "APP_LISTING_UPLOADED_FILE": "vedlagt fil"
 }

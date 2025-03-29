@@ -14,6 +14,23 @@
         "motorcycle" : "Motorcycles",
         "phone" : "Phones",
         "art" : "Art"
+    },
+    "APP_LISTING_CREATE_NEW": "New listing",
+    "APP_LISTING_CREATE_NEW_HEADER_LABEL": "Header",
+    "APP_LISTING_CREATE_NEW_DESCRIPTION_LABEL":"Description",
+    "APP_LISTING_CREATE_NEW_CATEGORY_LABEL": "Category",
+    "APP_LISTING_CREATE_NEW_PRICE_LABEL": "Price",
+    "APP_LISTING_CREATE_NEW_POSTALCODES_LABEL": "Postal Code",
+    "APP_LISTING_CREATE_NEW_IMAGES_LABEL": "Add images",
 
-    }
+    "APP_LISTING_CREATE_NEW_HEADER_PLACEHOLDER": "Enter headline",
+    "APP_LISTING_CREATE_NEW_DESCRIPTION_PLACEHOLDER": "Enter description",
+    "APP_LISTING_CREATE_NEW_CATEGORY_PLACEHOLDER": "Select category",
+    "APP_LISTING_CREATE_NEW_PRICE_PLACEHOLDER": "Enter price",
+    "APP_LISTING_CREATE_NEW_POSTAL_CODE_PLACEHOLDER": "Enter postal code",
+    "APP_LISTING_CREATE_NEW_IMAGES_PLACEHOLDER": "Attach images",
+
+    "APP_LISTING_CREATE_NEW_SUBMIT_BUTTON": "Submit listing",
+    "APP_LISTING_UPLOAD_FILE": "add file"
+
 }

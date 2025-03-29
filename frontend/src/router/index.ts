@@ -22,8 +22,13 @@ const router = createRouter({
     {
       path: '/language-selector',
       name: 'language-selector',
-      component: () => import('../views/NavbarLangugeSelectorView.vue'),
+      component: () => import('../views/NavbarLanguageSelectorView.vue'),
     },
+    {
+      path: '/create-listing/start',
+      name: 'create-listing-start',
+      component: () => import('../views/createListingsView/MarkedListingView.vue'),
+    }
 
   ],
 })
