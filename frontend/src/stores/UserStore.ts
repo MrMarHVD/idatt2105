@@ -31,6 +31,7 @@ export const useUserStore = defineStore("user", () => {
    * @throws {Error} If the login status is not 200.
    */
   function login(status: number, tokenStr: string, user: string) {
+    console.log(status);
     if (status === 200) {
       token.value = tokenStr;
       username.value = user;
