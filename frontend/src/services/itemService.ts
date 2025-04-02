@@ -12,7 +12,8 @@ export interface PaginatedItemsResponse {
 export async function fetchPreviewItems(): Promise<ItemPreviewType[]> {
   try {
     // NOTE: This endpoint likely needs updating for your actual API or pagination
-    const response = await api.get<ItemPreviewType[]>('/items'); // Using relative path assuming '/api' base
+    const response = await api.get<ItemPreviewType[]>('/items/all'); // Using relative path assuming '/api' base
+    console.log("item preview data", response.data); // Log fetched data TODO: remove
     return response.data;
   } catch (error) {
     console.error('Error fetching preview items:', error);
