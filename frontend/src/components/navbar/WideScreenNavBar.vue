@@ -9,6 +9,12 @@
       </RouterLink>
     </div>
     <div class="user-links">
+      <RouterLink
+        v-if="userStore.isAdmin"
+        to="/admin"
+        class="nav-link">
+        Admin
+      </RouterLink>
       <NavbarLanguageSelector />
       <template v-if="loggedIn">
         <RouterLink to="/messages">
@@ -30,7 +36,7 @@
 </template>
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from '@/stores/UserStore';
 import NavbarLanguageSelector from './LanguageSelector.vue';
@@ -54,6 +60,30 @@ const handleLogout = () => {
   userStore.logout();
   router.push('/login');
 };
+
+onMounted(() => {
+  console.log("Component mounted");
+  console.log("Logged in status:", userStore.loggedIn);
+
+  // Use setTimeout to ensure the store is fully loaded
+  setTimeout(async () => {
+    console.log("Checking after timeout, logged in:", userStore.loggedIn);
+    if (userStore.loggedIn) {
+      console.log("User is logged in, checking admin status");
+      const result = await userStore.checkIsAdmin();
+      console.log("Admin check result:", result);
+    } else {
+      console.log("User is not logged in, skipping admin check");
+    }
+  }, 100);
+});
+watch(() => userStore.loggedIn, async (isLoggedIn) => {
+  if (isLoggedIn) {
+    await userStore.checkIsAdmin();
+  } else {
+    userStore.isAdmin = false;
+  }
+});
 </script>
 
 <style scoped>

@@ -5,9 +5,9 @@ const emit = defineEmits<(e: "click") => void>()
 </script>
 
 <template>
-<button class="category-button" @click="emit('click')">
-  <img :src="icon" :alt="label" class="icon"/>
-  <span class="label">{{ label }}</span>
+  <button class="category-button" @click="emit('click')">
+    <img :src="icon" :alt="label" class="icon"/>
+    <span class="label">{{ label }}</span>
 
-</button>
+  </button>
 </template>

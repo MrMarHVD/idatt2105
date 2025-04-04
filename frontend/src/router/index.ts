@@ -50,8 +50,8 @@ const routes = [
     meta: { title: 'Create Listing - Fant', requiresAuth: true }
   },
   {
-    path: '/administrator/category',
-    name: 'administrator-category',
+    path: '/admin',
+    name: 'admin',
     component: CategoryEditView,
     meta: { title: 'Administrator - category - Fant'} // Consider adding requiresAuth, requiresAdmin?
   },

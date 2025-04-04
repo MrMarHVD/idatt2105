@@ -6,7 +6,40 @@ INSERT INTO users (email, display_name, password_hash, role)
 VALUES ('jakob@mail.com', 'jakob', '$2a$10$9JB0yUlymHFA23jzoN9VWOPF6UIjLPCWFxwYV02kI/MlYdNJsDlBW', 'ADMIN');
 
 INSERT INTO categories (name, description)
-VALUES ('Test', 'Test');
+VALUES ('Travel', 'travel');
+
+INSERT INTO categories (name, description)
+VALUES ('Appliance', 'appliance');
+
+INSERT INTO categories (name, description)
+VALUES ('Boat', 'boat');
+
+INSERT INTO categories (name, description)
+VALUES ('Book', 'book');
+
+INSERT INTO categories (name, description)
+VALUES ('Camera', 'camera');
+
+INSERT INTO categories (name, description)
+VALUES ('Car', 'car');
+
+INSERT INTO categories (name, description)
+VALUES ('Clothes', 'clothes');
+
+INSERT INTO categories (name, description)
+VALUES ('Computer', 'computer');
+
+INSERT INTO categories (name, description)
+VALUES ('Furniture', 'furniture');
+
+INSERT INTO categories (name, description)
+VALUES ('Motorcycle', 'motorcycle');
+
+INSERT INTO categories (name, description)
+VALUES ('Phone', 'phone');
+
+INSERT INTO categories (name, description)
+VALUES ('Art', 'art');
 
 INSERT INTO items (seller_id, category_id, brief_description, full_description, price, status, published_at, updated_at, latitude, longitude)
 VALUES (1, 1, 'Test', 'Test', 500.00, 'ACTIVE', NOW(), NOW(),62,5.7);
@@ -15,10 +48,10 @@ INSERT INTO items (seller_id, category_id, brief_description, full_description, 
 VALUES (1, 1, 'Lambi Deluxe', 'Test', 200.00, 'ACTIVE', NOW(), NOW(),62,8.1);
 
 INSERT INTO items (seller_id, category_id, brief_description, full_description, price, status, published_at, updated_at, latitude, longitude)
-VALUES (1, 1, 'Mills Majones', 'Test', 500.00, 'ACTIVE', NOW(), NOW(),59,7.5);
+VALUES (1, 2, 'Mills Majones', 'Test', 500.00, 'ACTIVE', NOW(), NOW(),59,7.5);
 
 INSERT INTO items (seller_id, category_id, brief_description, full_description, price, status, published_at, updated_at, latitude, longitude)
-VALUES (1, 1, 'Ny bil!!!!', 'Test', 100.00, 'ACTIVE', NOW(), NOW(),31,98);
+VALUES (1, 2, 'Ny bil!!!!', 'Test', 100.00, 'ACTIVE', NOW(), NOW(),31,98);
 
 INSERT INTO items (seller_id, category_id, brief_description, full_description, price, status, published_at, updated_at, latitude, longitude)
 VALUES (1, 1, 'Vaskepulver med jordbærsmak', 'Et fantastisk vaskepulver med smak av jordbær! Mmm!', 240.00, 'ACTIVE', NOW(), NOW(),60,6.5);
@@ -69,4 +102,5 @@ VALUES (8, 'https://i.ibb.co/ktPs8NS/syltetoy.png', 0);
 -- Insert mock images for item 9 (Diskotek)
 INSERT INTO item_images (item_id, image_url, position)
 VALUES (9, 'https://i.ibb.co/HTFJ6ky9/discoteque.jpg', 0);
+
 
